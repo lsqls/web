@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 基本表单</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form role="form">
+	<div class=“form-group">
+    <lable>邮箱</lable>
+	    <input type="text" class="form-control" placeholder="email" ></input>
+	 </div>
+     <div class="form-group">
+     <lable>密码</lable>
+	    <input type="text" class="form-control" placeholder="password" ></input>
+	 </div>
+     
+     <div class=“form-group">
+    <lable>文件</lable>
+	    <input type="file"></input>
+	 </div>
+     <div class=“form-group">
+     <lable>
+	    <input type="checkbox"></input>
+        记住我</lable>
+	 </div>
+     <div class=“form-group">
+	    <input type="submit" value="登陆"></input>
+        </div>
+</form>
+<form role="form" class="form-horizonal">
+	<div class=“form-group">
+    <lable class="control-lable col-xs-2 text-right">邮箱</lable>
+    <div class="col-xs-10">
+	    <input type="text" class="form-control" placeholder="email" ></input>
+        </div> 
+   </div>
+    
+     <div class=“form-group">
+    <lable class="control-lable col-xs-2 text-right">密码</lable>
+    <div class="col-xs-10">
+	    <input type="text" class="form-control" placeholder="password" ></input>
+	 </div>
+    </div>
+     <div class=“form-group">
+    <lable class="control-lable text-right col-xs-2">文件</lable>
+	   <div class="col-xs-10"> <input type="file"></input></div>
+	 </div>
+     <div class=“form-group">
+     <div class="col-xs-offset-2 col-xs-10">
+     <div class="checkbox">
+     <lable>
+	   <input type="checkbox">
+        记住我</lable>
+	 </div>
+     </div>
+     </div>
+     <div class=“form-group">
+	    <input type="submit" value="登陆" class="btn btn-default col-xs-offset-1"></input>
+        </div>
+</form>
+<form class="form-inline" role="form" >
+	<div class=“form-group">
+    <lable class="sr-only">邮箱</lable>
+	    <input type="text" class="form-control" placeholder="email" ></input>
+	 </div>
+     <div class="form-group">
+     <lable class="sr-only">密码</lable>
+	    <input type="text" class="form-control" placeholder="password" ></input>
+	 </div>
+     
+     <div class=“form-group">
+    <lable class="sr-only">文件</lable>
+	    <input type="file"></input>
+	 </div>
+     <div class=“form-group">
+     <div class="checkbox">
+     <lable class="sr-only">
+	    <input type="checkbox"></input>
+        记住我</lable>
+        </div>
+	 </div>
+     <div class=“form-group">
+	    <btn type="submit" class="btn btn-success">登陆</btn>
+        </div>
+        <div class="form-group"> 
+        <textarea class="form-control" rows="3"></textarea>
+</form>
+</body>
+</html>

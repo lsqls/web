@@ -1,0 +1,32 @@
+<?php
+if(isset($_POST["submit"])&&$_POST["submit"]=="登录")
+{
+$user=_POST["username"];
+$password=_POST["password"];
+  if($user=""||$password="")
+{
+echo"<script>alert'P请输入用户名或密码';history.go(-1);</script>";
+}
+  else
+{
+mysql_connect("localhost","root","");
+mysql_select_db("database");
+mysql_query("set names 'gbk'");
+$sql="select username,password from user where username==$user&&password==$password";
+$result=mysql_query($sql);
+$num=mysql_num_rows($result);
+        if($num)
+{
+echo<script>alert'登录成功';</script>;
+}
+        else
+{
+echo<script>alert'密码或用户名错误';history.go(-1);</script>;
+}
+}
+}
+else
+{
+echo"<script>history.go(-1);</script>";
+}
+?>
