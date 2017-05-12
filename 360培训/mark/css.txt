@@ -1,0 +1,109 @@
+css
+
+How to use
+1<link rel="stylesheet" href=Path>
+2<style type="text/css">
+3<p style=""></p>
+
+选择器
+通配选择器 *{}
+标签 p{}
+id   #id{}
+类选择器 .class{}
+属性选择器 input[diabled] input[type="password"]
+/*
+[attribute=value]
+用于选取带有指定属性和值的元素。
+[attribute~=value]
+用于选取属性值中包含指定词汇的元素。
+[attribute|=value]
+用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+[attribute^=value]
+匹配属性值以指定值开头的每个元素。
+[attribute$=value]
+匹配属性值以指定值结尾的每个元素。
+[attribute*=value]
+匹配属性值中包含指定值的每个元素。
+*/
+伪类 a:link a:visited a:hover a:active a:foucs
+
+选择器组合
+直接组合 EF   p.id 
+后代组合 E F  article p
+亲子组合 E>F  article>p
+
+选择器特异度级别（level）
+0:*
+1:标签选择器 伪元素
+2:类 伪类 属性
+3:id
+4:内联
+特异度级别一样，后面的优先级高
+!important 优先
+
+继承：某些属性会继承其父元素的计算值，除非显式指定一个值
+
+初始值
+每个属性都有初始值
+background-color transparent
+margin-left 0
+
+
+css求值过程
+
+颜色
+hex:#ff0000
+rgb(255,0,0)
+hsl(0,50%,50%) //h:hue(色相) s:saturation(饱和度) l:lightness(亮度)
+
+文本
+font-family://英文字体在前，中文字体在后
+Serif衬线体 Georgia宋体
+Sans-Serif 无衬线体Arial黑体 Helvetica微软雅黑
+Cursive ....
+font-size
+px 百分比 em
+初始值一般为16px
+font-style:normal italic oblique
+font-weight:nornal bold bolder lighter 100 200...
+line-height:长度 数字 百分比（行高）
+font:这里写关于文字的属性 
+中文web fonts
+src:local(''),
+url()
+format('');
+text-align（文本在容器内的对齐方式）
+left right center justify
+letter-spacing(字符间距)
+normal|length
+word-spacing(单词间距)
+text-indent(文本缩进)
+text-decorration
+underline line-through overline
+white-space(空白符处理) normal nowrap pre
+
+
+box model
+|-------margin--------|
+|--------border-------|
+|--------padding------|
+|--------content------|
+|                     |
+|---------------------|
+
+width(content box)
+heigth(content box)
+padding-top padding-right padding-bottom padding-left
+margin-top margin-right margin-bottom margin-left
+border
+border-width:length|thin|medium|thick
+border-style:none|solid|dashed|dotter|double
+border-color:color
+
+overflow:visible|hidden|scroll|auto
+
+viewport 浏览器可视区域
+块级元素dispaly:block list-item table
+行级元素display:inline inline-block inline-table
+
+visibility:visiable hidden collapse
